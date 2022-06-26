@@ -13,7 +13,7 @@ stages:
 - stage: validate
   jobs:
   - job: validate
-    container: false
+    continueOnError: false
     steps:
     - task: TerraformInstaller@0
       inputs:
